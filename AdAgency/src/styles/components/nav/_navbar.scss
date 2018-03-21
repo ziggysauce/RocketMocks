@@ -1,0 +1,39 @@
+.navbar {
+  border-bottom: 1px solid $accent;
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.logo {
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.navbar--links {
+  a {
+    padding: 0 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $off-black;
+    transition: 0.3s;
+
+    &:hover {
+      color: lighten($off-black, 40%);
+      transition: 0.3s;
+    }
+  }
+
+  a:last-of-type {
+    border: 2px solid $off-black;
+    padding: 1em;
+
+    &:hover {
+      color: white;
+      border: 2px solid $accent;
+      background: $accent;
+    }
+  }
+}
