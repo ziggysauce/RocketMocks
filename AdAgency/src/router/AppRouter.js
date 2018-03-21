@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import Header from '../components/nav/Header';
-import Header from '../components/nav/Footer';
+import Footer from '../components/nav/Footer';
 import Dashboard from '../components/Dashboard';
 import NotFound from '../components/NotFound';
 
