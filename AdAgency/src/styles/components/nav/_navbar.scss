@@ -7,33 +7,54 @@
   padding: 0 1em;
 }
 
-.logo {
-  font-size: 2em;
-  text-decoration: none;
+.navbar--links {
+  display: none;
 }
 
-.navbar--links {
-  a {
-    padding: 0 1em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $off-black;
-    transition: 0.3s;
+.navbar--menu {
+  display: flex;
+  color: $off-black;
+  cursor: pointer;
+  font-size: 2em;
+  transition: 0.3s;
 
-    &:hover {
-      color: lighten($off-black, 40%);
-      transition: 0.3s;
-    }
+  &:hover {
+    color: $accent;
+    transition: 0.3s;
+  }
+}
+
+@media (min-width: $tablet) {
+  .navbar--menu {
+    display: none;
   }
 
-  a:last-of-type {
-    border: 2px solid $off-black;
-    padding: 1em;
+  .navbar--links {
+    display: flex;
+    align-items: center;
 
-    &:hover {
-      color: white;
-      border: 2px solid $accent;
-      background: $accent;
+    a {
+      padding: 0 1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $off-black;
+      transition: 0.3s;
+  
+      &:hover {
+        color: lighten($off-black, 40%);
+        transition: 0.3s;
+      }
+    }
+  
+    a:last-of-type {
+      border: 2px solid $off-black;
+      padding: 1em;
+  
+      &:hover {
+        color: white;
+        border: 2px solid $accent;
+        background: $accent;
+      }
     }
   }
 }

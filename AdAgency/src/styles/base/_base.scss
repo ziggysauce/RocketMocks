@@ -4,8 +4,13 @@
 
 html, body {
   background: white;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
   font-size: $m-size;
+}
+
+.logo {
+  font-size: 2em;
+  text-decoration: none;
 }
 
 button {

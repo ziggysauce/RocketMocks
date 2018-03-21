@@ -11,6 +11,9 @@ const Header = () => (
       <NavLink to="/blog">Blog</NavLink>
       <NavLink to="/contact">Hire Us</NavLink>
     </div>
+    <div className="navbar--menu">
+      <i className="fas fa-bars"></i>
+    </div>
   </header>
 );
 
