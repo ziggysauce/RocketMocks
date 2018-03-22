@@ -1,11 +1,10 @@
 {
-  "name": "AdAgency",
+  "name": "adagency",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Dan Nguyen",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "dev-server": "webpack-dev-server --mode development"

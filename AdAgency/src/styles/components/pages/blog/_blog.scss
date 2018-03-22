@@ -1,0 +1,157 @@
+.blog--categories {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    margin: 1em 1em 0 1em;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $off-black;
+      transition: 0.3s;
+      font-weight: bold;
+
+      &:hover {
+        transition: 0.3s;
+        color: $accent;
+      }
+    }
+  }
+}
+
+.blog--subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3em 0;
+  width: 100vw;
+  color: $off-white;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3024338c801ac09e660b66e1cd5adb40&auto=format&fit=crop&w=1650&q=80');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 -100px;
+
+  h2 {
+    margin: 0;
+    font-size: 4em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+.subscribe-button {
+  background: $secondary;
+  border: 2px solid $secondary;
+  color: $off-white;
+  text-transform: uppercase;
+
+  &:hover {
+    background: darken($secondary, 10%);
+    border: 2px solid darken($secondary, 10%);
+  }
+}
+
+.blog--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+
+.blog--entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  height: 550px;
+
+  img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1em;
+  }
+
+  h3 {
+    color: $accent;
+  }
+}
+
+.category-button {
+  border: 1px solid lighten($accent, 10%);
+  color: darken($accent, 10%);
+  text-decoration: none;
+  transition: 0.3s;
+  text-transform: uppercase;
+
+  &:hover {
+    transition: 0.3s;
+    color: white;
+    background: $accent;
+    border: 1px solid $accent;
+  }
+}
+
+////////////////////////////////
+///// Blog Type Styles /////////
+////////////////////////////////
+
+.blog-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4em;
+  }
+}
+
+.blogtype--hero {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1510679096907-97a569388b0f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd3f15a17bc5f02c0400238600739a0e&auto=format&fit=crop&w=1650&q=80');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $accent;
+  font-size: 4em;
+}
+
+.blogtype--content {
+  max-width: 768px;
+  padding: 4em 1em;
+  text-align: left;
+
+  h3 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 400px) {
+  .blogtype--hero {
+    font-size: 8em;
+  }
+}

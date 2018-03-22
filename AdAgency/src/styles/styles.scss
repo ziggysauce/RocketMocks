@@ -1,5 +1,6 @@
 @import './base/settings';
 @import './base/base';
-@import './components/nav/navbar';
-@import './components/nav/footer';
+@import './components/shared/navbar';
+@import './components/shared/footer';
 @import './components/pages/mainpage';
+@import './components/pages/blog/blog';

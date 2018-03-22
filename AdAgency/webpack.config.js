@@ -8,6 +8,10 @@ module.exports = {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    historyApiFallback: true
+  },
   module: {
     rules: [
       {
@@ -26,7 +30,4 @@ module.exports = {
     ]
   },
   devtool: 'cheap-module-eval-source-map',
-  devServer: {
-    contentBase: path.join(__dirname, 'public')
-  }
 };
