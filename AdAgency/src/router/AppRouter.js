@@ -6,7 +6,7 @@ import Footer from '../components/shared/Footer';
 import Dashboard from '../components/Dashboard';
 import Works from '../components/pages/Works';
 import Services from '../components/pages/Services';
-import Agency from '../components/pages/Agency';
+import Agency from '../components/pages/agency/Agency';
 import Blog from '../components/pages/blog/Blog';
 import BlogType from '../components/pages/blog/BlogType';
 import Contact from '../components/pages/Contact';

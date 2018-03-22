@@ -12,7 +12,7 @@ class Blog extends Component {
 
     return (
       <div className="page-wrapper blog-page">
-        <h1>Blog Page</h1>
+        <h1>Blog</h1>
         <ul className="blog--categories">
           <li><Link to="/blog">All</Link></li>
           <li><Link to="/blog/uiux">UI/UX</Link></li>
