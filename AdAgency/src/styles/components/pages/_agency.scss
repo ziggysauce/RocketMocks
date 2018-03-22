@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   color: $accent;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .meet-the-team {
@@ -17,15 +17,14 @@
 
 .agency-team--wrapper {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
 }
 
 .agency-teammate {
   display: flex;
   flex-direction: column;
-  width: 25%;
-  height: 400px;
-  min-width: 250px;
+  width: 50%;
   position: relative;
   cursor: pointer;
 
@@ -56,6 +55,30 @@
 
 .agency--join {
   h2 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 400px) {
+  .agency--hero {
+    font-size: 4em;
+  }
+  .agency-teammate {
+    width: calc(100% / 3);
+  }
+  .agency--join h2 {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 800px) {
+  .agency--hero {
+    font-size: 6em;
+  }
+  .agency-teammate {
+    width: 25%;
+  }
+  .agency--join h2 {
     font-size: 4em;
   }
 }
