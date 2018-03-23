@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import teammates from '../../../api/Teammates';
 import TeamModal from './TeamModal';
+import { Link } from 'react-router-dom';
 
 
 class Agency extends Component {
@@ -42,6 +43,7 @@ class Agency extends Component {
         />
         <div className="agency--join">
           <h2>Interested In Joining?</h2>
+          <Link to="/careers" className="cta-button careers-button">View Open Positions</Link>
         </div>
       </div>
     );

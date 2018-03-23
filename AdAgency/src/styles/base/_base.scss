@@ -29,6 +29,16 @@ button {
   padding: .8em 1.5em;
 }
 
+.submit-button {
+  width: 250px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $off-black;
+    color: white;
+  }
+}
+
 button:disabled {
   cursor: default;
 }

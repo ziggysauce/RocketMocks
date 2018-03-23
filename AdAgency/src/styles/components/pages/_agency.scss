@@ -54,8 +54,24 @@
 }
 
 .agency--join {
+  padding-bottom: 4em;
+  
   h2 {
     font-size: 2em;
+  }
+}
+
+.careers-button {
+  border: 2px solid $secondary;
+  color: $secondary;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    background: $secondary;
+    color: white;
+    transition: 0.3s;
   }
 }
 
