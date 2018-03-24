@@ -1,0 +1,100 @@
+.service-type--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2em 0;
+}
+
+.service-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30vh;
+
+  span {
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}
+
+.service-energy {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1497440001374-f26997328c1b?ixlib=rb-0.3.5&s=0d00e68dab2df190877d68686e7b4b38&auto=format&fit=crop&w=2089&q=80');
+  background-size: cover;
+}
+.service-finance {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1444653389962-8149286c578a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7547e55cbaceb197d0b390309c9d09a2&auto=format&fit=crop&w=1645&q=80');
+  background-size: cover;
+}
+.service-healthcare {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1519781542704-957ff19eff00?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c351475860e8248dcd543ebbba1aa24f&auto=format&fit=crop&w=2046&q=80');
+  background-size: cover;
+}
+.service-entertainment {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1506704952906-12288ad0a78e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0f6ffc79b0053a4faeca4b0a77f86004&auto=format&fit=crop&w=1650&q=80');
+  background-size: cover;
+}
+
+.services--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2em;
+  margin-bottom: 4em;
+
+  h2 {
+    color: darken($secondary, 20%);
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.services--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: $secondary;
+  background: $off-white;
+  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+  transition: 0.3s;
+  box-shadow: 2px 2px 10px lighten($off-black, 40%);
+
+  &:hover {
+    background: $accent;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+@media (min-width: 400px) {
+  .service-type {
+    width: 50%;
+  }
+
+  .services--card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .service-type {
+    width: 25%;
+  }
+
+  .services--card {
+    width: calc(100% / 3);
+  }
+}
