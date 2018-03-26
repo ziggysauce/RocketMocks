@@ -4,7 +4,8 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import Header from '../components/shared/Header';
 import Footer from '../components/shared/Footer';
 import Dashboard from '../components/Dashboard';
-import Works from '../components/pages/Works';
+import Works from '../components/pages/work/Works';
+import Company from '../components/pages/work/Company';
 import Services from '../components/pages/Services';
 import Agency from '../components/pages/agency/Agency';
 import Blog from '../components/pages/blog/Blog';
@@ -19,7 +20,8 @@ const AppRouter = () => (
       <Header />
       <Switch>
         <Route exact path="/" component={Dashboard} />
-        <Route path="/works" component={Works} />
+        <Route exact path="/works" component={Works} />
+        <Route path="/works/:id" component={Company} />
         <Route path="/services" component={Services} />
         <Route path="/agency" component={Agency} />
         <Route exact path="/blog" component={Blog} />

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import works from '../../api/Works';
+import { Link } from 'react-router-dom';
+import works from '../../../api/Works';
 
 class Works extends Component {
   state = {
@@ -13,13 +14,17 @@ class Works extends Component {
         <div className="selected-works--wrapper">
           {this.state.works.map((work, index) => {
             return (
-              <div 
+              <Link 
                 key={index} 
-                className="selected-work" 
+                className="selected-work"
+                to={{
+                  pathname: `works/${work.url}`,
+                  state: { work: work }
+                }}
               >
                 <img src={work.img} alt="work example filler"/>
                 <p>{work.title}</p>
-              </div>
+              </Link>
             );
           })}
         </div>
