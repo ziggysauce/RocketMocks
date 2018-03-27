@@ -10,7 +10,7 @@ class Works extends Component {
   render() {
     return (
       <div className="page-wrapper">
-        <h1>Works Page</h1>
+        <h1>Featured Works</h1>
         <div className="selected-works--wrapper">
           {this.state.works.map((work, index) => {
             return (

@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => (
   <header className="navbar">
-    <NavLink exact to="/" className="logo">Logo</NavLink>
+    <NavLink exact to="/" className="logo">
+      <img src="https://image.flaticon.com/icons/svg/447/447767.svg" alt="logo"/>Koral
+    </NavLink>
     <div className="navbar--links">
       <NavLink to="/works">Works</NavLink>
       <NavLink to="/services">Services</NavLink>

@@ -1,0 +1,14 @@
+.homepage--hero {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('https://images.unsplash.com/photo-1493421419110-74f4e85ba126?ixlib=rb-0.3.5&s=83a76f0f6dfa394ad1190bdc29bebd22&auto=format&fit=crop&w=1649&q=80');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3em;
+  letter-spacing: 20px;
+  font-family: 'Mrs Sheppards', cursive;
+}

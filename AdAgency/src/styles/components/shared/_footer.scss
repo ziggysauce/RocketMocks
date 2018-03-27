@@ -91,6 +91,15 @@
   }
 }
 
+.credit {
+  display: flex;
+  flex-direction: column;
+  
+  span, a {
+    color: lighten($accent, 20%);
+  }
+}
+
 @media (min-width: $tablet) {
   .footer {
     flex-direction: row;
