@@ -1,0 +1,31 @@
+.carousel { 
+  border: 2px solid cyan;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.carousel-toggle {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin: 0 1em;
+  }
+
+  button {
+    width: 1em;
+    height: 1em;
+    background: transparent;
+    border: 1px solid $off-black;
+    border-radius: 100%;
+
+    &:hover {
+      background: $off-black;
+    }
+  }
+}

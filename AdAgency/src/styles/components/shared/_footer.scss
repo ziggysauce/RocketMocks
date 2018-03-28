@@ -95,8 +95,18 @@
   display: flex;
   flex-direction: column;
   
-  span, a {
+  span {
     color: lighten($accent, 20%);
+  }
+
+  a {
+    color: white;
+    transition: 0.3s;
+
+    &:hover {
+      color: lighten($accent, 20%);
+      transition: 0.3s;
+    }
   }
 }
 

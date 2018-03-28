@@ -5,7 +5,7 @@ const Careers = () => (
     <div className="career--hero">
       <h1>Careers</h1>
     </div>
-    <h2 className="career--subheader">The following positions are currently avaible:</h2>
+    <h2 className="career--subheader">The following positions are currently available:</h2>
     <div className="career-card--wrapper">
       <div className="career-card">
         <h3>Director of Operations</h3>
