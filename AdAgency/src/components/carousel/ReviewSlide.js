@@ -5,13 +5,17 @@ const ReviewSlide = (props) => {
   const index = props.carousel.index;
 
   return (
-    <li>
-      <img src={reviews[index].logo} alt="logo img filler"></img>
-      <p className="review-text">"{reviews[index].review}"</p>
-      <p className="review-author">{reviews[index].author}</p>
-      <p className="review-company">{reviews[index].company}</p>
-    </li>
-  );
+    reviews.map((review, slideIndex) => {
+      return (
+        <li key={slideIndex} className={slideIndex === index ? "review-slide" : "hide-slide"}>
+          <img src={review.logo} alt="logo img filler"></img>
+          <p className="review-text">"{review.review}"</p>
+          <p className="review-author">{review.author}</p>
+          <p className="review-company">{review.company}</p>
+        </li>
+      );
+    })
+  )
 }
 
 export default ReviewSlide;

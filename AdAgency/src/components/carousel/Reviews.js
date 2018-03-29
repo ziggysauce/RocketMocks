@@ -10,7 +10,21 @@ class Reviews extends React.Component {
 
   handleOnClick = (index) => this.setState({ index });
 
-  render() {
+  rotateSlide = () => {
+    let index = this.state.index;
+    index === 4 ? index = 0 : index += 1;
+    this.setState({ index });
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.rotateSlide(), 8000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  render() {    
     return (
       <div className="carousel">
         <ul>

@@ -28,6 +28,112 @@
   }
 }
 
+.navbar--menu__close {
+  display: flex;
+  color: lighten($accent, 20%);
+  cursor: pointer;
+  font-size: 2em;
+  transition: 0.3s;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  padding: 1em 1em 0 0;
+
+  &:hover {
+    color: $off-black;
+    transition: 0.3s;
+  }
+}
+
+.navbar--mobile__inactive {
+  transform: translateX(100vw); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: $accent;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animateCloseNav .3s;
+
+  a {
+    position: relative;
+    display: flex;
+    color: $off-black;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 1em;
+    transition: 0.3s;
+
+    &:hover {
+      color: lighten($accent, 20%);
+      transition: 0.3s;
+    }
+  }
+}
+
+@keyframes animateCloseNav { 
+  0% { 
+    transform: translateX(0); 
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(100vw); 
+  }
+}
+
+.navbar--mobile__active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: $accent;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animateNav .3s; 
+
+  a {
+    position: relative;
+    display: flex;
+    color: $off-black;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 1em;
+    transition: 0.3s;
+
+    &:hover {
+      color: lighten($accent, 20%);
+      transition: 0.3s;
+    }
+  }
+}
+
+@keyframes animateNav { 
+  0% { 
+    transform: translateX(100vw); 
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+.navbar--menu__inactive {
+  display: none;
+}
+
+.navbar--menu__initial {
+  border: 4px solid green;
+  display: flex;
+}
+
 @media (min-width: $tablet) {
   .navbar--menu {
     display: none;
@@ -60,5 +166,9 @@
         background: $accent;
       }
     }
+  }
+
+  .navbar--mobile__active {
+    display: none;
   }
 }

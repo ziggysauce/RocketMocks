@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 import blogs from '../../../api/BlogEntries';
 
 class Blog extends Component {
@@ -27,18 +28,20 @@ class Blog extends Component {
           <button className="cta-button subscribe-button">Subscribe</button>
         </div>
         <div className="blog--wrapper">
-          {blogs.map((blog, index) => {
-            return (
-              <div key={index} className="blog--entry">
-                <Link to={`blog/${blog.url}`}>
-                  <img src={blog.img} alt="blog image filler"/>
-                </Link>
-                <Link to={`blog/${blog.url}`} className="cta-button category-button">{blog.category}</Link>
-                <h3>{blog.title}</h3>
-                <p>{blog.description}</p>
-            </div>
-            );
-          })}
+          <Fade left>
+            {blogs.map((blog, index) => {
+              return (
+                <div key={index} className="blog--entry">
+                  <Link to={`blog/${blog.url}`}>
+                    <img src={blog.img} alt="blog image filler"/>
+                  </Link>
+                  <Link to={`blog/${blog.url}`} className="cta-button category-button">{blog.category}</Link>
+                  <h3>{blog.title}</h3>
+                  <p>{blog.description}</p>
+                </div>
+              );
+            })}
+          </Fade>
         </div>
       </div>
     );

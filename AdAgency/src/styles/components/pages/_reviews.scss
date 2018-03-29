@@ -13,7 +13,7 @@
     max-width: 768px;
   }
 
-  li {
+  li {    
     div {
       display: flex;
       align-items: center;
@@ -26,6 +26,33 @@
       font-size: 2em;
     }
   }
+}
+
+.review-slide {
+  padding: 0 1em;
+  animation: reviewFade 8s; 
+}
+
+@keyframes reviewFade { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+}
+
+.hide-slide {
+  display: none;
 }
 
 .review-text {
