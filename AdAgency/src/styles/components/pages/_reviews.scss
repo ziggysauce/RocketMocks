@@ -1,10 +1,47 @@
 .carousel { 
   border: 2px solid cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
 
   ul {
     list-style-type: none;
     padding: 0;
+    max-width: 768px;
   }
+
+  li {
+    div {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 5em;
+      margin-right: 1em;
+    }
+    span {
+      font-size: 2em;
+    }
+  }
+}
+
+.review-text {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.review-author {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.review-company {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 300;
+  color: lighten($off-black, 30%);
 }
 
 .carousel-toggle {

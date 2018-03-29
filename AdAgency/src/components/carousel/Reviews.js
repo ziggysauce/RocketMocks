@@ -1,9 +1,15 @@
 import React from 'react';
 import ReviewSlide from './ReviewSlide';
+import reviews from '../../api/Reviews';
 
 class Reviews extends React.Component {
   state = {
     index: 0,
+    reviews: reviews.reviews
+  }
+
+  handleOnClick = () => {
+    
   }
 
   render() {
