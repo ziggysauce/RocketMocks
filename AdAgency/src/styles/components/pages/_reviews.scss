@@ -1,9 +1,11 @@
 .carousel { 
-  border: 2px solid cyan;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   text-align: left;
+  min-height: 70vh;
+  padding-bottom: 3em;
 
   ul {
     list-style-type: none;
@@ -53,16 +55,25 @@
   li {
     margin: 0 1em;
   }
+}
 
-  button {
-    width: 1em;
-    height: 1em;
-    background: transparent;
-    border: 1px solid $off-black;
-    border-radius: 100%;
+.carousel-toggle--button {
+  width: 1em;
+  height: 1em;
+  background: transparent;
+  border: 1px solid $off-black;
+  border-radius: 100%;
 
-    &:hover {
-      background: $off-black;
-    }
+  &:hover {
+    background: lighten($secondary, 20%);
+    border: 1px solid lighten($secondary, 20%);
   }
+}
+
+.carousel-toggle--button__active {
+  width: 1em;
+  height: 1em;
+  background: $secondary;
+  border: 1px solid $secondary;
+  border-radius: 100%;
 }

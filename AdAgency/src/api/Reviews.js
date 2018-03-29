@@ -2,13 +2,13 @@ module.exports = {
   reviews: [
     {
       logo: 'https://image.flaticon.com/icons/svg/651/651488.svg',
-      review: 'Koral helped created us an online platform that has since spiked our daily attendance. The attention to detail and optimizations across all devices are top-notch. We highly recommend Koral to any small or large business looking to create an amazing website.',
+      review: 'Koral helped create us an online platform that has since spiked our daily attendance. The attention to detail and optimizations across all devices are top-notch. We highly recommend Koral to any small or large business looking to create an amazing website.',
       author: 'Zenko Mitsunai',
       company: 'Midori',
     },
     {
       logo: 'https://image.flaticon.com/icons/svg/265/265700.svg',
-      review: 'We highly recommend Koral for any SEO and mobile platform needs. They developed our mobile app and has given our customers easy access to their accounts, sending/receiving money, and making payments.',
+      review: 'We highly recommend Koral for any SEO and mobile platform needs. They developed our mobile app which has given our customers easy access to their accounts, sending/receiving money, and making payments.',
       author: 'Carl Tannesworth',
       company: 'SMP Financial',
     },

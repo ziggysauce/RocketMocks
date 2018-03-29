@@ -8,9 +8,7 @@ class Reviews extends React.Component {
     reviews: reviews.reviews
   }
 
-  handleOnClick = () => {
-    
-  }
+  handleOnClick = (index) => this.setState({ index });
 
   render() {
     return (
@@ -19,11 +17,16 @@ class Reviews extends React.Component {
           <ReviewSlide carousel={this.state}/>
         </ul>
         <ul className="carousel-toggle">
-          <li><button></button></li>
-          <li><button></button></li>
-          <li><button></button></li>
-          <li><button></button></li>
-          <li><button></button></li>
+        {this.state.reviews.map((review, index) => {
+          return(
+            <li key={index}>
+              <button 
+                className={this.state.index === index ? 'carousel-toggle--button__active' : 'carousel-toggle--button'} 
+                onClick={() => this.handleOnClick(index)}
+              />
+            </li>
+          );
+        })}
         </ul>
       </div>
     );

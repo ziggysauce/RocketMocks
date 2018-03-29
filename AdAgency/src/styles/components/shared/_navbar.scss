@@ -1,10 +1,14 @@
 .navbar {
   border-bottom: 1px solid $accent;
+  background: white;
   height: 5em;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
+  position: fixed;
+  z-index: 10;
 }
 
 .navbar--links {

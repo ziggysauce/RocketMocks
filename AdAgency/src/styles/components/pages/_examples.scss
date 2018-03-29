@@ -1,0 +1,78 @@
+.slideshow {
+  width: 100vw;
+  min-height: 90vh;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow-header, .slideshow-para {
+  z-index: 5;
+  font-size: 4em;
+  margin: 0;
+  padding: 1em 0;
+  max-width: 900px;
+  // background: rgba(255,255,255,0.3);
+  color: white;
+}
+
+.slideshow-header {
+  font-size: 4em;
+}
+
+.slideshow-para {
+  font-size: 2em;
+}
+
+.slideshow li { 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: imageAnimation 30s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1515358204547-8689c79d6991?ixlib=rb-0.3.5&s=9a05e8d7c9368f1d28187050027b5efb&auto=format&fit=crop&w=1650&q=80) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1493244040629-496f6d136cc4?ixlib=rb-0.3.5&s=a911c7f14c44367108aca9f7dfcb06cc&auto=format&fit=crop&w=1632&q=80);
+  animation-delay: 5s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1491451412778-3e2c8b766720?ixlib=rb-0.3.5&s=5eda5a2315714387251addb68f3d8cc4&auto=format&fit=crop&w=1650&q=80);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1451859757691-f318d641ab4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cc6b18805ea37024b878ea21d03d93a&auto=format&fit=crop&w=1650&q=80);
+  animation-delay: 15s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.unsplash.com/photo-1440151050977-247552660a3b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=adb20b8e9a3816176a732c7f11d264cb&auto=format&fit=crop&w=2739&q=80);
+  animation-delay: 20s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: .8;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: .8;
+  }
+  30% {
+    opacity: 0;
+  }
+}
