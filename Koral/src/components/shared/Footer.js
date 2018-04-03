@@ -14,10 +14,10 @@ const Footer = () => (
         Koral is a DC based advertisement agency specializing in web development, UI/UX, animations, graphics, and content management. Let us help create a visual branding for your company.
       </p>
       <div className="credit">
-      <span>All images provided by <a href="https://unsplash.com/" target="_blank">unsplash.</a></span>
-      <span>Icons provided by <a href="https://fontawesome.com/" target="_blank">font awesome.</a></span>
-      <span>Clone/Inspiration of <a href="https://tubikstudio.com/" target="_blank">Tubik.</a></span>
-      <span>Favicon/logo made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY.</a></span>
+        <span>All images provided by <a href="https://unsplash.com/" target="_blank">unsplash.</a></span>
+        <span>Icons provided by <a href="https://fontawesome.com/" target="_blank">font awesome.</a></span>
+        <span>Clone/Inspiration of <a href="https://tubikstudio.com/" target="_blank">Tubik.</a></span>
+        <span>Favicon/logo made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY.</a></span>
       </div>
       <div className="footer--contact-details">
         <p>&copy; Koral 2018</p>
