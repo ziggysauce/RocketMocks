@@ -32,10 +32,23 @@ class Blog extends Component {
             {blogs.map((blog, index) => {
               return (
                 <div key={index} className="blog--entry">
-                  <Link to={`blog/${blog.url}`}>
+                  <Link 
+                    to={{
+                      pathname: `blog/${blog.url}`,
+                      state: { blog: blog }
+                    }}
+                  >
                     <img src={blog.img} alt="blog image filler"/>
                   </Link>
-                  <Link to={`blog/${blog.url}`} className="cta-button category-button">{blog.category}</Link>
+                  <Link 
+                    to={{
+                      pathname: `blog/${blog.url}`,
+                      state: { blog: blog }
+                    }}
+                    className="cta-button category-button"
+                  >
+                    {blog.category}
+                  </Link>
                   <h3>{blog.title}</h3>
                   <p>{blog.description}</p>
                 </div>

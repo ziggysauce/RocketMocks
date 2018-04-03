@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: flex-end;
   text-align: left;
-  min-height: 70vh;
+  height: 80vh;
   padding-bottom: 3em;
 
   ul {
@@ -56,18 +56,18 @@
 }
 
 .review-text {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 300;
 }
 
 .review-author {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 700;
   margin: 0;
 }
 
 .review-company {
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 0;
   font-weight: 300;
   color: lighten($off-black, 30%);
@@ -85,8 +85,9 @@
 }
 
 .carousel-toggle--button {
-  width: 15px;
-  height: 15px;
+  width: 15px !important;
+  height: 15px !important;
+  padding: 0;
   background: transparent;
   border: 1px solid $off-black;
   border-radius: 100%;
@@ -98,9 +99,19 @@
 }
 
 .carousel-toggle--button__active {
-  width: 1em;
-  height: 1em;
+  width: 15px !important;
+  height: 15px !important;
+  padding: 0;
   background: $secondary;
   border: 1px solid $secondary;
   border-radius: 100%;
+}
+
+@media (min-width: 400px) {
+  .review-text {
+    font-size: 2em
+  }
+  .review-author, .review-company {
+    font-size: 1.5em;
+  }
 }

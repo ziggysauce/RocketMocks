@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Company = (props) => {
-  const { work } = props.location.state
+  const { work } = props.location.state;
   // console.log('work: ', work);
   
   return (

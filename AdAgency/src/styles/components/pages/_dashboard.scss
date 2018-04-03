@@ -3,8 +3,12 @@
   background-image: url('https://images.unsplash.com/photo-1487020530383-c62abe4f9346?ixlib=rb-0.3.5&s=4de91af3dff3c29394cf36feef0176ce&auto=format&fit=crop&w=2700&q=80');
   background-attachment: fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 90vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +46,7 @@
   justify-content: center;
 
   > p {
-    font-size: 3em;
+    font-size: 1.5em;
     background: $accent;
     color: $off-white;
     padding: 2em 1em;
@@ -55,7 +59,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2em .5em;
+  padding: 2em 1em;
 
   h2 {
     font-size: 3em;
@@ -150,6 +154,10 @@
       font-size: 1.5em;
     }
   }  
+
+  .homepage--work > p {
+    font-size: 3em;
+  }
 
   .homepage--clients li {
     width: 50%;
