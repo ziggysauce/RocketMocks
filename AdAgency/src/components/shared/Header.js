@@ -22,7 +22,7 @@ class Header extends React.Component {
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/agency">Agency</NavLink>
           <NavLink to="/blog">Blog</NavLink>
-          <NavLink to="/contact">Hire Us</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
         </div>
 
         <div onClick={() => this.handleOnClickMenu()} className="navbar--menu">
@@ -37,7 +37,7 @@ class Header extends React.Component {
           <NavLink onClick={() => this.handleOnClickMenu()} to="/services">Services</NavLink>
           <NavLink onClick={() => this.handleOnClickMenu()} to="/agency">Agency</NavLink>
           <NavLink onClick={() => this.handleOnClickMenu()} to="/blog">Blog</NavLink>
-          <NavLink onClick={() => this.handleOnClickMenu()} to="/contact">Hire Us</NavLink>
+          <NavLink onClick={() => this.handleOnClickMenu()} to="/contact">Contact Us</NavLink>
         </div>
       </header>
     );

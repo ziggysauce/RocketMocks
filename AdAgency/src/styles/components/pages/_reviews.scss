@@ -30,7 +30,7 @@
 
 .review-slide {
   padding: 0 1em;
-  animation: reviewFade 8s; 
+  animation: reviewFade 4s; 
 }
 
 @keyframes reviewFade { 
@@ -85,8 +85,8 @@
 }
 
 .carousel-toggle--button {
-  width: 1em;
-  height: 1em;
+  width: 15px;
+  height: 15px;
   background: transparent;
   border: 1px solid $off-black;
   border-radius: 100%;

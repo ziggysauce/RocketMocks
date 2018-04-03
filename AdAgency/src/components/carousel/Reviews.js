@@ -17,7 +17,7 @@ class Reviews extends React.Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.rotateSlide(), 8000);
+    this.interval = setInterval(() => this.rotateSlide(), 4000);
   }
 
   componentWillUnmount() {
