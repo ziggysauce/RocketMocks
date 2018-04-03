@@ -2,10 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const BlogType = (props) => {
-  console.log(props);
-  const { blog } = props.location.state;
-  console.log('blog: ', blog);
-
   return (
     <div className="page-wrapper blog-type">
       <h1>{props.match.params.id}</h1>
@@ -18,7 +14,7 @@ const BlogType = (props) => {
         <li><Link to="/blog/animation">Animation</Link></li>
       </ul>
       <div className="blogtype--hero">
-        <h2>{blog.title}</h2>
+        <h2>{props.location.state ? props.location.state.blog.title : `${props.match.params.id.charAt(0).toUpperCase()}${props.match.params.id.slice(1)} Category`}</h2>
       </div>
       <div className="blogtype--content">
         <h3>Blog Header</h3>
