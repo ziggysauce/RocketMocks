@@ -1,33 +1,53 @@
-// entry: src/app.js --> output: public/scripts
-
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-module.exports = {
-  entry: './src/app.js',
-  output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'public'),
-    historyApiFallback: true
-  },
-  module: {
-    rules: [
-      {
-        loader: 'babel-loader',
-        test: /\.js$/, // files that end in .js
-        exclude: /node_modules/
-      },
-      {
-        test: /\.s?css$/,
-        use: [
-          'style-loader', // put content into DOM
-          'css-loader', // read css files
-          'sass-loader' // read sass files
-        ]
-      }
-    ]
-  },
-  devtool: 'cheap-module-eval-source-map',
+module.exports = (env) => {
+  const isProduction = env == 'production';
+  const cssExtract = new ExtractTextPlugin('styles.css');
+
+  return {
+    entry: './src/app.js',
+    output: {
+      path: path.join(__dirname, 'public'),
+      filename: 'bundle.js'
+    },
+    module: {
+      rules: [
+        {
+          test: /\.(js|jsx)$/, // checks for any files ending in .js or .jsx
+          exclude: [/node_modules/], // doesn't include node modules
+          loader: 'babel-loader', // uses babel as transpiler
+        },
+        {
+          test: /\.s?css$/, // checks for any files ending in .css, .sass, or .scss
+          use: isProduction ?
+          cssExtract.extract({
+            use: [
+              {
+                loader: 'css-loader',
+                options: {
+                  sourceMaps: true
+                }
+              }, 
+              {
+                loader: 'sass-loader',
+                options: {
+                  sourceMaps: true
+                }
+              },            
+            ]
+          }) :
+          ['style-loader', 'css-loader', 'sass-loader']
+        }
+      ]
+    },
+    plugins: [
+      cssExtract
+    ],
+    devtool: isProduction ? 'source-map' : 'inline-source-map',
+    devServer: {
+      contentBase: path.join(__dirname, 'public'),
+      historyApiFallback: true
+    },
+  }
 };
