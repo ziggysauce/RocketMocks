@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => (
   <header className="navbar__wrapper">
-    <h1>supRIZE</h1>
+    <h1>surpRIZE</h1>
     <div className="navbar__links">
       <NavLink exact to="/">About</NavLink>
       <NavLink exact to="/">Support</NavLink>

@@ -1,13 +1,13 @@
 {
-  "name": "suprize",
+  "name": "surprize",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Dan Nguyen",
   "license": "MIT",
   "scripts": {
+    "start": "webpack-dev-server",
     "build:dev": "webpack",
-    "build:prod": "NODE_ENV=production webpack -p",
-    "dev": "webpack-dev-server --hot"
+    "build:prod": "NODE_ENV=production webpack -p"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",

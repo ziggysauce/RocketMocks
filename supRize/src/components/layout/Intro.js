@@ -6,6 +6,7 @@ class Intro extends Component {
     return (
       <div className="intro__wrapper">
         <Particles 
+          className="particles"
           params={{
             particles: {
               line_linked: {
@@ -22,10 +23,20 @@ class Intro extends Component {
           }}
         />
         <div className="intro__banner">
-          <h1>Save Time & Invest in Who Matters!!</h1>
-          <h2>Putting talent into your workplace</h2>
+          <div className="intro__banner--text">
+            <h1>Save Time & Invest in Who Matters.</h1>
+            <h2>Submitting my application to your finance application</h2>
+          </div>
+          <div className="phone-mockup">
+            <div className="phone-mockup--audio"></div>
+            <div className="phone-mockup--screen">
+              Phone screen stuff here!
+            </div>
+            <div className="phone-mockup--button"></div>
+          </div>
         </div>
-        Intro section
+        <div className="point-bg-transparent"></div>
+        <div className="point-bg-white"></div>
       </div>
     );
   }
