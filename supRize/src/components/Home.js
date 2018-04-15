@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Intro from './layout/intro/Intro';
 
 const Dashboard = () => (
-  <div>
-    This is the Home page!
+  <div className="home__wrapper">
+    <Intro />
   </div>
 );
 
