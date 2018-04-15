@@ -26,6 +26,7 @@
     "react-dom": "^16.2.0",
     "react-modal": "^3.3.2",
     "react-particles-js": "^2.1.2",
+    "react-reveal": "^1.2.1",
     "react-router-dom": "^4.2.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
