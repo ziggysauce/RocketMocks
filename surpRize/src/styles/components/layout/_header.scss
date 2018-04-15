@@ -1,0 +1,30 @@
+.navbar__wrapper {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: $shadow-bottom;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding: 0 1em;
+  background: rgba($off-white, .9);
+  z-index: 5;
+
+  h1 {
+    letter-spacing: 7px;
+    font-size: 1.5em;
+    color: $purple;
+  }
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-around;
+  
+  a {
+    color: rgba($purple, .7);
+    margin: 0 1em;
+  }
+}

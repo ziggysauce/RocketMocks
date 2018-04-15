@@ -1,0 +1,109 @@
+.intro__wrapper {
+  overflow: hidden;
+  padding-top: 60px;
+  height: 80vh;
+  background: linear-gradient(115deg, $light-blue,$dark-blue 40%, $light-purple);
+}
+
+.particles {
+  height: 70vh;
+  z-index: -1;
+}
+
+.intro__banner {
+  transform: translateY(-60vh);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.intro__banner--text {
+  margin: 5em 5em 1em 5em;
+  text-shadow: 1px 2px 3px rgba(0,7,10,.15);
+  text-align: center;
+
+  h1 {
+    color: darken(rgba(white, .97), 10%);
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: 1.5em;
+    color: rgba($text-blue, .97);
+  }
+}
+
+/* ===============================
+======= POINTED BG STYLES ========
+=============================== */
+.point-bg-transparent {
+  height: 100px;
+  width: 100%;
+  transform: translateY(-25vh);
+  background: transparent;
+  mix-blend-mode: soft-light;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: $off-white;
+    z-index: -1;
+    transform: rotate(10deg);
+    left: 35%;
+    top: -0;
+    transform-origin: 0 0;
+  }
+  
+  &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: $off-white;
+    z-index: -1;
+    transform: rotate(-10deg);
+    right: 65%;
+    top: 0;
+    transform-origin: 100% 0;
+  }
+}
+
+.point-bg-white {
+  height: 37%;
+  width: 100%;
+  transform: translateY(-30vh);
+  background: transparent;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: $off-white;
+    z-index: -1;
+    transform: rotate(8deg);
+    left: 35%;
+    top: -0;
+    transform-origin: 0 0;
+  }
+  
+  &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: $off-white;
+    z-index: -1;
+    transform: rotate(-8deg);
+    right: 65%;
+    top: 0;
+    transform-origin: 100% 0;
+  }
+}
