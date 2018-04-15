@@ -38,12 +38,12 @@ const Phone = () => (
       </div>
       <div className="phone-screen__main--contact">
         <h3>Portfolio</h3>
-        <p>danieltnguyen.com</p>
+        <a href="http://danieltnguyen.com" target="_blank">danieltnguyen.com</a>
       </div>
     </div>
     <div className="phone-screen__bottom">
-      <span>Left</span>
-      <span>Right</span>
+      <span>Contact Me</span>
+      <span>Hire Me</span>
     </div>
   </div>
 );

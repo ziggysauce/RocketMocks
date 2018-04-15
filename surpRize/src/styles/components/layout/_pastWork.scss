@@ -1,0 +1,125 @@
+.pastwork__wrapper {
+  padding: 5em .5em;
+  min-height: 100vh;
+  color: white;
+  background: linear-gradient($sea-green, $sea-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  text-shadow: 1px 2px 3px rgba(0,7,10,.15);
+
+  h2 {
+    font-size: 2.3em;
+    max-width: 550px;
+  }
+
+  h3 {
+    font-size: 1.7em;
+    color: rgba(white, 0.7);
+    font-weight: 300;
+    max-width: 550px;
+    margin: 0 0 3em 0;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.pastwork--projects__wrapper {
+  border-radius: 5px;
+  background: rgba(white, .3);
+  box-shadow: 0px 0px 30px 1px rgba(black, .2);
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding: .5em 1em;
+  margin: .5em 0;
+
+  p {
+    margin: 0;
+    text-align: end;
+    font-weight: 400;
+    font-size: .5em;
+    width: 100%;
+    background: white;
+    color: rgba(black, .3);
+    border-radius: 5px;
+    padding: .2em 2em .2em 0;
+    margin-top: 1em;
+  }
+}
+
+.pastwork--projects__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pastwork--projects__icon {
+  border-radius: 5px;
+  background: rgba(white, .3);
+  box-shadow: 0px 0px 10px 1px rgba(black, .2);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+
+  &:hover {
+    color: rgba(white, .7);
+  }
+}
+
+.pastwork--projects__title {
+  font-size: .7em;
+  font-weight: 300;
+}
+
+.pastwork--projects__link {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1em;
+
+  &:hover {
+    color: rgba(white, .7);
+  }
+}
+
+@media (min-width: 510px) {
+  .pastwork__wrapper {
+    padding: 5em 2em;
+  }
+
+  .pastwork--projects__wrapper {
+    width: 500px;
+    height: 130px;
+
+    p {
+      font-size: .8em;
+    }
+  }
+
+  .pastwork--projects__icon {
+    font-size: 3.5em;
+    width: 80px;
+    height: 80px;
+  }
+
+  .pastwork--projects__title {
+    font-size: 1.5em;
+  }
+
+  .pastwork--projects__link {
+    font-size: 2em;
+  
+    &:hover {
+      color: rgba(white, .7);
+    }
+  }
+}
