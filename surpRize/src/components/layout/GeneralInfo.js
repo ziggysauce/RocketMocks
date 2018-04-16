@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 const GeneralInfo = () => (
-  <div className="gen-info__wrapper">
+  <div className="gen-info__wrapper" id="traits">
     <h2>Hiring takes effort, <strong>but I can help.</strong></h2>
     <div className="gen-info--attributes">
       <Fade bottom>

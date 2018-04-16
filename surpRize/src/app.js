@@ -2,6 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
-import AppRouter from './router/AppRouter';
+import Home from './components/Home';
 
-ReactDOM.render(<AppRouter/>, document.getElementById('root'));
+ReactDOM.render(<Home/>, document.getElementById('root'));

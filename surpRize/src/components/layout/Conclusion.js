@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 const Conclusion = () => (
   <div className="conclusion__wrapper">
-    <div className="conclusion__content">
+    <div className="conclusion__content" id="interest">
       <Fade left>
         <h2>Why Am I Interested?</h2>
       </Fade>
