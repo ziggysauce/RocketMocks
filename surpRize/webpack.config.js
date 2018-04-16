@@ -11,7 +11,7 @@ module.exports = {
     'babel-polyfill',
     './src/app.js',
     ],
-    vendor: ['react', 'react-dom', 'react-router'],
+    vendor: ['react', 'react-dom'],
   },
   output: {
     path: path.join(__dirname, 'public', 'dist'),

@@ -109,7 +109,8 @@
 @media (min-width: 500px) {
   .conclusion__content {
     h2 {
-      font-size: 1.5em
+      font-size: 1.5em;
+      text-shadow: 1px 2px 3px rgba(0,7,10,.15);
     }
 
     p {

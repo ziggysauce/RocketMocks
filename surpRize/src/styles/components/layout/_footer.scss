@@ -1,5 +1,4 @@
 .footer__wrapper {
-  border: 2px solid orange;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(115deg, $light-blue,$dark-blue 40%, $light-purple);
 }

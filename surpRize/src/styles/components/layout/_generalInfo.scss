@@ -1,6 +1,6 @@
 .gen-info__wrapper {
   display: flex;
-  margin-top: 35vh;
+  margin-top: 50vh;
   padding-bottom: 5em;
   display: flex;
   flex-direction: column;
@@ -75,8 +75,8 @@
   }
 }
 
-@media (min-width: 969px) {
+@media (min-width: 1041px) {
   .gen-info__wrapper {
-    margin-top: 10vh;
+    margin-top: 20vh;
   }
 }
