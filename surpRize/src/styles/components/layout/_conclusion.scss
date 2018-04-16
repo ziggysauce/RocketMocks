@@ -1,0 +1,132 @@
+.conclusion__wrapper {
+  background: $off-white;
+  overflow: hidden;
+}
+
+.conclusion__content {
+  height: 475px;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $purple;
+
+  h2, p {
+    max-width: 768px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  h2 {
+    color: $purple;
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0;
+  }
+
+  p {
+    color: $grey-text;
+    font-size: .8em;
+  }
+}
+
+.point-conclusion {
+  height: 200px;
+  width: 100%;
+  transform: translateY(15vh);
+  background: transparent;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 200px;
+    background: darken($off-white, 2%);
+    z-index: -1;
+    transform: rotate(10deg);
+    left: 65%;
+    top: -0;
+    transform-origin: 0 0;
+  }
+  
+  &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 200px;
+    background: darken($off-white, 2%);
+    z-index: -1;
+    transform: rotate(-10deg);
+    right: 35%;
+    top: 0;
+    transform-origin: 100% 0;
+  }
+}
+
+.point-conclusion-dark {
+  height: 200px;
+  width: 100%;
+  transform: translateY(5vh);
+  background: transparent;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 200px;
+    background: darken($off-white, 5%);
+    z-index: -1;
+    transform: rotate(8deg);
+    left: 65%;
+    top: -0;
+    transform-origin: 0 0;
+  }
+  
+  &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 200px;
+    background: darken($off-white, 5%);
+    z-index: -1;
+    transform: rotate(-8deg);
+    right: 35%;
+    top: 0;
+    transform-origin: 100% 0;
+  }
+}
+
+.post-conclusion {
+  height: 10vh;
+  position: relative;
+  background: darken($off-white, 5%);
+}
+
+
+@media (min-width: 500px) {
+  .conclusion__content {
+    h2 {
+      font-size: 1.5em
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .conclusion__content {
+    h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+}
