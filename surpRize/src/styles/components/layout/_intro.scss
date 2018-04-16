@@ -1,27 +1,28 @@
 .intro__wrapper {
   overflow: hidden;
   padding-top: 60px;
-  height: 80vh;
+  height: 100vh;
   background: linear-gradient(115deg, $light-blue,$dark-blue 40%, $light-purple);
 }
 
 .particles {
-  height: 70vh;
+  height: 100vh;
   z-index: -1;
 }
 
 .intro__banner {
-  transform: translateY(-60vh);
+  transform: translateY(-100vh);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
   z-index: 2;
+  padding: 0 2em;
 }
 
 .intro__banner--text {
-  margin: 5em 5em 1em 5em;
+  margin: 0em 2em 1em 2em;
   text-shadow: 1px 2px 3px rgba(0,7,10,.15);
   text-align: center;
 
@@ -38,10 +39,33 @@
   }
 }
 
-/* ===============================
+.point-bg-transparent, .point-bg-white {
+  display: none;
+}
+
+@media (min-width: 1010px) {
+  .particles {
+    height: 70vh;
+  }
+
+  .intro__wrapper {
+    height: 80vh;
+  }
+
+  .intro__banner {
+    transform: translateY(-60vh);
+  }
+
+  .intro__banner--text {
+    margin: 4em 2em 1em 2em;
+  }
+
+
+  /* ===============================
 ======= POINTED BG STYLES ========
 =============================== */
 .point-bg-transparent {
+  display: flex;
   height: 100px;
   width: 100%;
   transform: translateY(-25vh);
@@ -76,6 +100,7 @@
 }
 
 .point-bg-white {
+  display: flex;
   height: 37%;
   width: 100%;
   transform: translateY(-30vh);
@@ -106,4 +131,5 @@
     top: 0;
     transform-origin: 100% 0;
   }
+}
 }
