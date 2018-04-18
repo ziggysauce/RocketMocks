@@ -5,7 +5,7 @@ import projects from './work/work';
 const PastWork = () => (
   <div className="pastwork__wrapper" id="work">
     <Fade bottom>
-      <h2>Lower your hesitations and check out some of my work.</h2>
+      <h2>Check out some of my work.</h2>
       <h3>Click the <span>icon</span> to see the live site.</h3>
     </Fade>
     <Fade bottom>
