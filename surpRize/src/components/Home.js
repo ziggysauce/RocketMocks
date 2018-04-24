@@ -18,7 +18,6 @@ class Dashboard extends React.Component {
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      console.log('scrolling');
       window.scrollY  < 50 ? this.setState({ top: true }) : this.setState({ top: false });
     });
   }

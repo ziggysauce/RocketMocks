@@ -14,7 +14,7 @@ const GeneralInfo = () => (
         <div>
           <span className="gen-info--icon-wrapper-2"><i className="fas fa-puzzle-piece"></i></span>
           <p>I solve problems</p>
-          <p>I write clean, scalable code, with a mobile-first approach. Efficiency, optimizations, and incredible UI/UX is a part of my toolkit.</p>
+          <p>I write clean, scalable code, with a mobile-first approach. Efficiency, optimizations, and incredible UI/UX are all a part of my process.</p>
         </div>
         <div>
           <span className="gen-info--icon-wrapper-3"><i className="fas fa-people-carry"></i></span>

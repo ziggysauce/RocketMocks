@@ -3,6 +3,11 @@ import Particles from 'react-particles-js';
 import Phone from './phone/Phone';
 
 class Intro extends Component {
+  // Keep particle.js from updated on scroll changes
+  shouldComponentUpdate() {
+    return false;
+  }
+
   render() {
     return (
       <div className="intro__wrapper">

@@ -19,6 +19,14 @@ const PastWork = () => (
       </div>
       <div className="pastwork--projects__wrapper">
         <div className="pastwork--projects__card">
+          <a className="pastwork--projects__icon" href="https://gecho.herokuapp.com/"  target="_blank"><i className="fas fa-play-circle"></i></a>
+          <h4 className="pastwork--projects__title">Gecho</h4>
+          <a className="pastwork--projects__link" href="https://github.com/chingu-voyage4/Geckos-Team-32" target="_blank">Repository</a>
+        </div>
+        <p>Video-music player utilizing YouTube's API, built with React</p>
+      </div>
+      <div className="pastwork--projects__wrapper">
+        <div className="pastwork--projects__card">
           <a className="pastwork--projects__icon" href="http://koral.ziggysauce.surge.sh/" target="_blank"><i className="fas fa-anchor"></i></a>
           <h4 className="pastwork--projects__title">Koral</h4>
           <a className="pastwork--projects__link" href="https://github.com/ziggysauce/RocketMocks/tree/master/Koral" target="_blank">Repository</a>
